@@ -13,7 +13,8 @@ const styles = theme => ({
     root: {
         marginTop: 0,
         width: '100%',
-        backgroundColor:'#fff',
+        backgroundColor:'#282A61',
+
     },
     appBar: {
         height: 60,

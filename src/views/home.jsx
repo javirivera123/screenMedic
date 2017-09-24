@@ -14,9 +14,13 @@ const styles = theme => ({
         backgroundColor: '#24292e',
     },
     media: {
-        height: 300,
         marginBottom:20,
         marginTop:7,
+        minHeight: 300,
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
     },
     paper: theme.mixins.gutters({
         paddingTop: 8,
@@ -51,15 +55,12 @@ class Home extends Component {
                         title="Contemplative Reptile"
                     />
                     <div>
-                        <h1>  Headquarters Hair & Apparel </h1>
+                        <h1> Screen Medic: SmartPhone Repair  </h1>
                     </div>
-                    <h4>  145 S. Mesa Hills </h4>
+                    <h4>   </h4>
                     <Typography type="body1" component="p">
-                        Look your best! Headquarters Hair & Apperal is a family owned business in El Paso TX. We are
-                        located in the west side of town and are always making our customers happy. We have been opened
-                        for about 5 years and have had many of our clients from milatary base. We are constantly getting
-                        great reviews. We are not limited to only haircuts for adults, children or our seniors but we also
-                        offer great massage and offer hair coloring at your pleasure.
+                        Got a cracked or broken smartphone device? Look no further! The Screen Medic can have your
+                        device back to great condition!
                     </Typography>
                     <div>
                         <MyTiles>

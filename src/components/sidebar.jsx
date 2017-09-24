@@ -28,10 +28,10 @@ const styles = theme => ({
         backgroundColor:'#24292e',
     },
     card: {
-        maxWidth: 400,
+        maxWidth: 700,
     },
     media: {
-        height: 300,
+        height: 200,
         marginBottom:20,
     },
     list: {
@@ -78,10 +78,11 @@ class SideBarItem extends Component {
                 <Card className={classes.card}>
                     <CardMedia
                         className={classes.media}
-                        image={process.env.PUBLIC_URL + 'banner/stars.jpg'}
+                        image={process.env.PUBLIC_URL + 'banner/colormother.jpg'}
                         title="Contemplative Reptile"
                     />
                 </Card>
+
                 <ListItem button>
                     <ListItemIcon>
                         <HomeIcon />
@@ -100,7 +101,7 @@ class SideBarItem extends Component {
                     <ListItemIcon>
                         <PhoneIcon />
                     </ListItemIcon>
-                    <NavLink activeClassName='active' to='call'>Call</NavLink>
+                    <NavLink activeClassName='active' to='call'>Contact</NavLink>
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon>
@@ -176,7 +177,7 @@ class SideBarItem extends Component {
                             {sideList}
                         </Drawer>
                     <Typography type="title" className={classes.flex}>
-                        Home
+                        Screen Medic
                     </Typography>
                 </Toolbar>
 

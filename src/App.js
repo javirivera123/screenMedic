@@ -7,7 +7,9 @@ import { withStyles } from 'material-ui/styles';
 import HomeView from './views/home.jsx';
 import HoursView from './views/hours.jsx';
 import MySideBar from './components/sidebar.jsx';
-import MyFooter from './components/footer.jsx';
+import MyFooter from './components/footer.jsx'
+
+
 
 const styles = theme => ({
     root: {

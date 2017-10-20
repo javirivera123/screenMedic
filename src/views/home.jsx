@@ -5,13 +5,14 @@ import { withStyles } from 'material-ui/styles';
 import { CardMedia } from 'material-ui/Card';
 import Paper from 'material-ui/Paper';
 import Typography from 'material-ui/Typography';
-import MyTiles from '../components/tiles.jsx';
+import ExampleCard from '../components/example-card.jsx';
+import {Grid} from "../../node_modules/material-ui/index";
 
 const styles = theme => ({
     root: {
-        marginTop: 0,
+        flexGrow: 1,
+        marginTop: 30,
         width: '100%',
-        backgroundColor: '#24292e',
     },
     media: {
         marginBottom:20,
@@ -52,7 +53,7 @@ class Home extends Component {
                     <CardMedia
                         className={classes.media}
                         image={process.env.PUBLIC_URL + 'banner/mountains.jpg'}
-                        title="Contemplative Reptile"
+                        title="Contemplativ"
                     />
                     <div>
                         <h1> Screen Medic: SmartPhone Repair  </h1>
@@ -63,8 +64,38 @@ class Home extends Component {
                         device back to great condition!
                     </Typography>
                     <div>
-                        <MyTiles>
-                        </MyTiles>
+                        <div className={classes.root}>
+                            <Grid container spacing={24}>
+                                <Grid item xs={12} sm={6}>
+                                    <ExampleCard
+                                        title = {'iphone 7'}
+                                        image = {process.env.PUBLIC_URL + './iphonepics/ip7.png'}
+                                        desc = "lorem ipsum">
+                                    </ExampleCard>
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                    <ExampleCard
+                                        title = {'iphone 6'}
+                                        image = {process.env.PUBLIC_URL + './iphonepics/iphone6.png'}>
+                                    </ExampleCard>
+                                </Grid>
+                            </Grid>
+                            <Grid container spacing={24}>
+                                <Grid item xs={12} sm={6}>
+                                    <ExampleCard
+                                        title = {'iphone 7'}
+                                        image = {process.env.PUBLIC_URL + './iphonepics/ip7.png'}
+                                        desc = "lorem ipsum">
+                                    </ExampleCard>
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                    <ExampleCard
+                                        title = {'iphone 6'}
+                                        image = {process.env.PUBLIC_URL + './iphonepics/iphone6.png'}>
+                                    </ExampleCard>
+                                </Grid>
+                            </Grid>
+                        </div>
                     </div>
                 </Paper>
             </div>

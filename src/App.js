@@ -15,11 +15,11 @@ const styles = theme => ({
     root: {
         marginTop: 0,
         width: '100%',
-        backgroundColor:'#282A61',
+        backgroundColor:'powderblue',
 
     },
     appBar: {
-        height: 60,
+        height: 50,
     },
 });
 

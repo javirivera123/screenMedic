@@ -85,7 +85,6 @@ class Home extends Component {
                                                         <ExampleCard
                                                             title = {'iphone X'}
                                                             image = {process.env.PUBLIC_URL + './iphonepics/ip7.png'}>
-                                                            price = {'Coming Soon'}
                                                         </ExampleCard>
                                                     </Grid>
                                                     <Grid item xs={12}>
@@ -130,21 +129,21 @@ class Home extends Component {
                                                 <Grid container spacing={24}>
                                                     <Grid item xs>
                                                         <ExampleCard
-                                                            title = {'iphone 7'}
+                                                            title = {'iPhone'}
                                                             image = {process.env.PUBLIC_URL + './iphonepics/ip7.png'}>
                                                             price = {'$89'}
                                                         </ExampleCard>
                                                     </Grid>
                                                     <Grid item xs>
                                                         <ExampleCard
-                                                            title = {'iphone 6'}
-                                                            image = {process.env.PUBLIC_URL + './iphonepics/iphone6.png'}>
+                                                            title = {'iPad'}
+                                                            image = {process.env.PUBLIC_URL + './iphonepics/ipadpro.png'}>
                                                         </ExampleCard>
                                                     </Grid>
                                                     <Grid item xs>
                                                         <ExampleCard
-                                                            title = {'iphone 5'}
-                                                            image = {process.env.PUBLIC_URL + './iphonepics/ip7.png'}>
+                                                            title = {'Accessories'}
+                                                            image = {process.env.PUBLIC_URL + './iphonepics/parts.jpg'}>
                                                         </ExampleCard>
                                                     </Grid>
                                                 </Grid>

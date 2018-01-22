@@ -59,50 +59,50 @@ const styles = {
 
 
 
-    class SimpleMediaCard extends React.Component {
+class SimpleMediaCard extends React.Component {
 
     constructor(props) {
         super(props);
     }
-        state = {
-            value: undefined,
-        };
+    state = {
+        value: undefined,
+    };
 
     handleClickOpen = () => {
         this.setState({openButton: true});
-       // this.radioGroup.focus();
+        // this.radioGroup.focus();
     };
 
-        componentWillMount() {
-            this.setState({ value: this.props.value });
+    componentWillMount() {
+        this.setState({ value: this.props.value });
+    }
+
+    componentWillUpdate(nextProps) {
+        if (nextProps.value !== this.props.value) {
+            // eslint-disable-next-line react/no-will-update-set-state
+            this.setState({ value: nextProps.value });
         }
+    }
 
-        componentWillUpdate(nextProps) {
-            if (nextProps.value !== this.props.value) {
-                // eslint-disable-next-line react/no-will-update-set-state
-                this.setState({ value: nextProps.value });
-            }
-        }
+    radioGroup = null;
 
-        radioGroup = null;
+    handleEntering = () => {
 
-        handleEntering = () => {
+    };
 
-        };
+    handleCancel = () => {
+        //this.props.onRequestClose(this.props.value);
+        this.setState({openButton: false});
+    };
 
-        handleCancel = () => {
-            //this.props.onRequestClose(this.props.value);
-            this.setState({openButton: false});
-        };
+    handleOk = () => {
+        //this.props.onRequestClose(this.state.value);
+        this.setState({openButton: false});
+    };
 
-        handleOk = () => {
-            //this.props.onRequestClose(this.state.value);
-            this.setState({openButton: false});
-        };
-
-        handleChange = (event, value) => {
-            this.setState({ value });
-        };
+    handleChange = (event, value) => {
+        this.setState({ value });
+    };
     render() {
         const { classes } = this.props;
         const { value, ...other } = this.props;
@@ -169,7 +169,7 @@ const styles = {
             </div>
         );
     }
-    }
+}
 
 
 

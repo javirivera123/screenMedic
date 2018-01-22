@@ -44,7 +44,7 @@ const styles = theme => ({
     },
     flex: {
         flex: 1,
-        color: '#FAFAFA'
+        color: '#92b8bd'
     },
 });
 
@@ -78,7 +78,7 @@ class SideBarItem extends Component {
                 <Card className={classes.card}>
                     <CardMedia
                         className={classes.media}
-                        image={process.env.PUBLIC_URL + 'banner/colormother.jpg'}
+                        image={process.env.PUBLIC_URL + 'iphonepics/sidebariphone.jpg'}
                         title="Contemplative Reptile"
                     />
                 </Card>
